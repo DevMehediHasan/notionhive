@@ -400,7 +400,12 @@ section#slider {
   text-transform: uppercase;
   margin: 50px;
 }
-
+.shape {
+  background: #EA4715;
+  padding: 45px 0px 45px 450px;
+  margin-right: -100px;
+  margin-top: -465px;
+}
 .shape .shape2{
   height: 242px;
   border: 1px solid #ECECEC;
@@ -419,12 +424,7 @@ section#slider {
   width: 488px;
 height: 465px;
 }
-.shape {
-  background: #e98843;
-  padding: 45px 0px 45px 450px;
-  margin-right: -100px;
-  margin-top: -465px;
-}
+
 /*----- About Us Section End -----*/
 
 
