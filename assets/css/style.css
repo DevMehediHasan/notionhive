@@ -411,6 +411,7 @@ section#slider {
   border: 1px solid #ECECEC;
   border-radius: 50%;
   width: 242px;
+  position: relative;
 }
 
 .about_us p {
