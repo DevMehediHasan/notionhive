@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
+    <link rel="stylesheet" href="assets/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css" integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,66 +26,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/fontawesome.min.js" integrity="sha512-j3gF1rYV2kvAKJ0Jo5CdgLgSYS7QYmBVVUjduXdoeBkc4NFV4aSRTi+Rodkiy9ht7ZYEwF+s09S43Z1Y+ujUkA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/regular.min.js" integrity="sha512-Kcbb5bDGCQQwo67YHS9uDvRmyrNEqHLPA1Kmn0eqrritqGDp3OpkBGvHk36GNEH44MtWM1L5k3i9MSQPMkNIuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/brands.min.js" integrity="sha512-1e+6G7fuQ5RdPcZcRTnR3++VY2mjeh0+zFdrD580Ell/XcUw/DQLgad5XSCX+y2p/dmJwboZYBPoiNn77YAL5A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="mapdata.js"></script>
+    <script src="countrymap.js"></script>
 
-
-
-    <style>
-        
-        .fa-plus{
-            color: #fff;
-            background-color: #EA4715;
-            width: 34px;
-            height: 34px;
-            padding: 35px;
-            text-align: center;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-        }
-        .image-box{
-            display: block;
-            position: relative;
-        }
-        .image-box img{
-            width: 100%;
-        }
-        .blog-content .sub-title{
-            font-family: 'Red Hat Display';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 20px;
-            /* identical to box height, or 167% */
-
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.01em;
-            text-transform: uppercase;
-            color: #676767;
-        }
-        .blog-content .heading{
-            font-family: 'Red Hat Display';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 34px;
-            /* identical to box height, or 142% */
-
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.01em;
-
-            color: #000000;
-        }
-    </style>
 </head>
 <body>
-    
 
-     <div class="container">
+
+<section>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</section>
+
+
+<section class="blog">
+    <div class="container">
+        <h1 class="main-heading">
+            Blog
+        </h1>
         <div class="row blog-carousel">
             <div class="col-md-6">
                 <div class="image-box">
@@ -105,7 +100,7 @@
             <div class="col-md-6">
                 <div class="image-box">
                     <figure>
-                        <img src="Rectangle.jpg" alt="Rectangle">
+                        <img src="Rectangle2.png" alt="Rectangle">
                         <i class="fa fa-plus"></i>
                     </figure>
                 </div>
@@ -114,7 +109,23 @@
                         Window
                     </span>
                     <h2 class="heading">
-                        Lorem ipsom dolor
+                        Consectetur adipiscing sed do
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image-box">
+                    <figure>
+                        <img src="Rectangle2.png" alt="Rectangle">
+                        <i class="fa fa-plus"></i>
+                    </figure>
+                </div>
+                <div class="blog-content">
+                    <span class="sub-title">
+                        Window
+                    </span>
+                    <h2 class="heading">
+                        Minim veniam, quis nostrud exercitation
                     </h2>
                 </div>
             </div>
@@ -130,28 +141,28 @@
                         Window
                     </span>
                     <h2 class="heading">
-                        Lorem ipsom dolor
-                    </h2>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="image-box">
-                    <figure>
-                        <img src="Rectangle.jpg" alt="Rectangle">
-                        <i class="fa fa-plus"></i>
-                    </figure>
-                </div>
-                <div class="blog-content">
-                    <span class="sub-title">
-                        Window
-                    </span>
-                    <h2 class="heading">
-                        Lorem ipsom dolor
+                        Minim veniam, quis nostrud exercitation
                     </h2>
                 </div>
             </div>
          </div>
      </div>
+</section>
+
+<section class="brances">
+    <div class="container">
+        <div class="brance-head">
+            <h1 class="main-heading">
+                Our Branches
+            </h1>
+            <p class="sub-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+        </div>
+        
+        <div id="map" style="margin-left: 18%;"></div>
+    </div>
+</section>
 
 
 
@@ -160,9 +171,12 @@
 <script>
     $('.blog-carousel').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
+        speed: 500,
         arrows: false,
-        slidesToScroll: 3
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 </script>
 </html>
