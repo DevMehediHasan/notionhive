@@ -23,11 +23,16 @@
 .top-bar{
     height: 51px;
     line-height: 51px;
+    position: relative;
+    z-index: 2;
+}
+.top-bar span{
+  color: #fff;
 }
 .top-bar li{
     list-style: none;
-    border-left: 1px solid #00000033;
-    border-right: 1px solid #00000033;
+    border-left: 1px solid #FFFFFF33;
+    border-right: 1px solid #FFFFFF33;
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 400;
@@ -36,7 +41,7 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: #fff;
     float: right;
     padding: 0 24px;
 }
@@ -45,10 +50,14 @@
 }
 /* End topbar */
 
+/* Star navigation */
 .menu {    
-    border-top: 1px solid #00000033;
+    border-top: 1px solid #FFFFFF33;
+    position: relative;
+    z-index: 2;
   }
   .logo {
+    color: #fff !important;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -68,12 +77,14 @@
     text-align: right;
   }
   .menu .sign_in a{
-    color: #000000;
+    color: #fff;
   }
   .main_menu ul{
     margin: 0px;
   }
-
+form .fa-magnifying-glass{
+  color: #fff;
+}
   .main_menu > ul > li {
     display: inline-block;
     position: relative;
@@ -92,8 +103,9 @@
     font-size: 15px;
     align-items: center;
     letter-spacing: 0.02em;
-    color: #7B7B7B;
+    color: #fff;
   }
+  
   
   .main_menu ul li .active,
   .main_menu ul li:hover > a {
@@ -137,6 +149,7 @@
   }
   .main_menu ul li .mega_menu_item a {
     padding: 10px 0;
+    color: #022C3B;
   }
   
   .main_menu ul li .mega_menu_item a:hover {
@@ -283,12 +296,12 @@
   /* end menu  */
 
 /*----- Slider Section start -----*/
+section#slider {
+  margin-top: -132px;
+}
 #slider img{
     width: 1366px;
     height: 640px;
-    left: 0px;
-    top: 1px;
-
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.45) 38.51%, rgba(0, 0, 0, 0) 51.65%), linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%), url(.jpg);
 }
 
@@ -298,69 +311,36 @@
 }
 
 #slider h1{
-    /* Modern elegance */
-
-
-width: 543px;
-height: 60px;
-
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 500;
-font-size: 46px;
-line-height: 60px;
-/* identical to box height, or 130% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.01em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
+  width: 543px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 60px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 
 #slider p{
-    /* Our most popular bifold. Perfect for thermal efficiency. */
 
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
 
-width: 533px;
-height: 25px;
-
-font-family: 'Red Hat Display';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 25px;
-/* identical to box height, or 167% */
-
-display: flex;
-align-items: center;
-letter-spacing: 0.02em;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
 }
 
 #slider a{
     color: #FFFFFF;
     background: #EA4715;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 16px 24px;
     gap: 10px;
     position: absolute;
@@ -369,19 +349,10 @@ flex-grow: 0;
     left: 0px;
     top: 135px;
     border-radius: 5px;
-    font-family: 'Red Hat Display';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     text-decoration: none;
 }
 
@@ -405,6 +376,56 @@ flex-grow: 0;
 }
 
 /*----- Slider Section End -----*/
+
+
+/*----- About Us Section Start -----*/
+.about_us{
+  padding: 80px 0 220px 0 ;
+}
+
+.about_us h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+.shape h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 112px;
+  color: #fff;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin: 50px;
+}
+
+.shape .shape2{
+  height: 242px;
+  border: 1px solid #ECECEC;
+  border-radius: 50%;
+  width: 242px;
+}
+
+.about_us p {
+  margin: 24px 229px 60px 230px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+}
+
+.about_us img{
+  width: 488px;
+height: 465px;
+}
+.shape {
+  background: #e98843;
+  padding: 45px 0px 45px 450px;
+  margin-right: -100px;
+  margin-top: -465px;
+}
+/*----- About Us Section End -----*/
 
 
 .project{
