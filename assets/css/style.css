@@ -105,9 +105,10 @@ form .fa-magnifying-glass{
     letter-spacing: 0.02em;
     color: #fff;
   }
+  .main_menu ul li .active{
+    color: #FFFFFF;
+  }
   
-  
-  .main_menu ul li .active,
   .main_menu ul li:hover > a {
     color: #EA4715;
   }
